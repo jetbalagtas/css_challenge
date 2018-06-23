@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "bootstrap": "^4.1.1",
+    "font-awesome": "^4.7.0",
+    "http-server": "^0.11.1",
+    "node-sass": "^4.9.0"
+  }
+}
