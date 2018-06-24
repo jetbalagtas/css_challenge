@@ -49,17 +49,17 @@ table {
 }
 
 .sidebar {
-  background-color: #2e2e2e;
-  width: 60px;
   height: 100%;
+  background-color: #2e2e2e;
   position: absolute;
   top: 0;
   left: 0;
   text-align: center;
 
   .sidebar__logo-box {
-    background-color: #DB0A5B;
+    width: 60px;
     height: 60px;
+    background-color: #DB0A5B;
     display: table-cell;
     vertical-align: middle;
 
@@ -68,10 +68,10 @@ table {
     }
   }
 
-  .sidebar__channels {
+  .sidebar__nav {
     margin-top: -10px;
 
-    .sidebar__channel-icon {
+    .sidebar__nav-icon {
       width: 40px;
       height: 40px;
       border-radius: 5px;
@@ -80,9 +80,39 @@ table {
       margin: 20px auto 5px;
     }
 
-    .sidebar__channel-shortcut {
+    .sidebar__nav-shortcut {
       color: #ffffff;
       font-size: .75em;
+    }
+  }
+}
+
+.previews {
+  width: 26.5625%;
+  position: relative;
+  top: 61px;
+  left: 60px;
+
+  .previews__preview {
+    height: 90px;
+    font-size: 0.85em;
+    line-height: 1.1;
+    border-top: 1px solid #d3d3d3;
+    border-bottom: 1px solid #d3d3d3;
+    background-color: #f8f7f7;
+    overflow: hidden;
+    padding: 10px 15px 0 15px;
+
+    .previews__preview-title {
+      font-weight: bold;
+    }
+
+    .previews__preview-body {
+      padding-top: 5px;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
     }
   }
 }
