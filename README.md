@@ -1,4 +1,4 @@
-#### [Visit the live demo here](http://jetbalagtas.github.io/peralta/)
+#### [Visit the live demo here](http://jetbalagtas.github.io/css_challenge/)
 
 # css_challenge - Wireframe => HTML
 
