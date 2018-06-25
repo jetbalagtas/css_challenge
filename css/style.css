@@ -29,7 +29,8 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: Arial, Helvetica, sans-serif;
+  color: #555555; }
 
 ol, ul {
   list-style: none; }
@@ -46,39 +47,63 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.header-bar {
+  background-color: #f8f7f7;
+  width: 95.3125%;
+  height: 7.5%;
+  position: absolute;
+  left: 4.6875%;
+  line-height: 2.5;
+  white-space: nowrap;
+  border-bottom: 2px solid #d3d3d3;
+  display: flex;
+  justify-content: space-between; }
+  .header-bar .header-bar__title {
+    font-size: 2em;
+    padding-left: 15px;
+    align-self: center; }
+  .header-bar .alt-nav {
+    font-size: 2em;
+    padding-right: 40px;
+    align-self: center; }
+
 .sidebar {
+  width: 4.6875%;
   height: 100%;
   background-color: #2e2e2e;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   text-align: center; }
   .sidebar .sidebar__logo-box {
-    width: 60px;
-    height: 60px;
-    background-color: #DB0A5B;
-    display: table-cell;
-    vertical-align: middle; }
+    height: 7.5%;
+    background-color: #DB0A5B; }
     .sidebar .sidebar__logo-box .sidebar__logo-box-logo {
-      width: 56%; }
+      width: 56%;
+      padding: 10px; }
   .sidebar .sidebar__nav {
-    margin-top: -10px; }
+    margin-top: 10px; }
     .sidebar .sidebar__nav .sidebar__nav-icon {
-      width: 40px;
-      height: 40px;
+      width: 50px;
+      height: 50px;
       border-radius: 5px;
       background-color: #ffffff;
       object-fit: cover;
-      margin: 20px auto 5px; }
+      margin: 13px auto 5px; }
     .sidebar .sidebar__nav .sidebar__nav-shortcut {
       color: #ffffff;
       font-size: .75em; }
 
+.main-container {
+  position: absolute;
+  left: 4.6875%;
+  top: 7.6%;
+  width: 95.3125%; }
+
 .previews {
   width: 26.5625%;
   position: relative;
-  top: 61px;
-  left: 60px; }
+  border-right: 1px solid #d3d3d3; }
   .previews .previews__preview {
     height: 90px;
     font-size: 0.85em;
@@ -97,16 +122,58 @@ table {
       -webkit-line-clamp: 4;
       -webkit-box-orient: vertical; }
 
-.header-bar {
-  background-color: #f8f7f7;
-  width: 100%;
-  height: 60px;
-  position: fixed;
-  left: 60px;
-  padding-left: 20px;
-  line-height: 2.5;
-  white-space: nowrap;
-  border-bottom: 2px solid #d3d3d3; }
-  .header-bar .header-bar__title {
+.content-body {
+  position: absolute;
+  top: 0;
+  left: 26.5625%;
+  padding: 40px; }
+  .content-body .content-body__title {
     font-size: 1.5em;
-    vertical-align: middle; }
+    font-weight: bold; }
+  .content-body .content-body__subtitle {
+    font-size: 1.1em;
+    font-style: italic;
+    font-weight: 100;
+    margin-top: 5px; }
+  .content-body hr {
+    border: 1px solid #cccccc;
+    color: #434343; }
+  .content-body .content-body__paragraph--centered {
+    text-align: center; }
+  .content-body .content-body__paragraph {
+    margin-top: 20px;
+    line-height: 1.2; }
+    .content-body .content-body__paragraph .content-body__paragraph-drop-cap {
+      float: left;
+      font-size: 2em;
+      padding-right: 4px; }
+    .content-body .content-body__paragraph .content-body__paragraph-image {
+      display: block;
+      width: 500px;
+      height: 200px;
+      margin: auto;
+      background-color: #a1a1a1; }
+    .content-body .content-body__paragraph .content-body__paragraph-image-description {
+      font-size: 0.75em;
+      font-style: italic; }
+  .content-body .content-body__input-area {
+    position: fixed;
+    left: 30%;
+    bottom: 0;
+    height: 10%;
+    width: 82.5%;
+    background-color: #ffffff;
+    border-top: 1px solid #cccccc;
+    border-left: 1px solid #d3d3d3;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 25px; }
+    .content-body .content-body__input-area .content-body__input-area-field {
+      width: 80%;
+      height: 50%;
+      align-self: center;
+      border-radius: 5px;
+      font-size: 1.25em;
+      border: 1px solid #cccccc;
+      color: #434343;
+      padding-left: 20px; }
